@@ -1,0 +1,123 @@
+:root {
+  --primary-300-base: #0065fe;
+  --neutral-white: #ffffff;
+  --text-color-main-text: #141414;
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(./assets/fonts/gilroy/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url(./assets/fonts/gilroy/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url(./assets/fonts/gilroy/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url(./assets/fonts/gilroy/Gilroy-Regular.ttf);
+}
+
+body {
+  /* color: var(--primary-300-base, #0065fe); */
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.flat-button {
+    color: var(--primary-300-base);
+    border: none;
+    background-color: var(--neutral-white);
+}
+
+.nav-link {
+  color: var(--text-color-main-text, #141414) !important;
+  font-size: 18px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.active {
+  color: var(--primary-300-base, #0065fe) !important;
+  font-size: 18px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-primary {
+  color: var(--primary-300-base, #0065fe);
+  font-family: Gilroy-Medium;
+}
+
+.try {
+  border-radius: 100px;
+  padding: 12px 24px;
+  background: var(--primary-300-base, #0065fe);
+  color: var(--neutral-white, #fff);
+  font-size: 16px;
+  font-family: Gilroy-SemiBold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 948px;
+  height: 200px;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 100px auto;
+}
+
+.banner-head {
+  color: #141414;
+  text-align: center;
+  font-size: 48px;
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+}
+
+.url-shortening {
+  background-image: url(./assets/images/url-shortening.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 20px;
+}
+
+.banner-text {
+  color: var(--text-color-main-text, #141414);
+  text-align: center;
+  font-size: 18px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 20px;
+  /* display: flex; */
+  width: 781px;
+  /* height: 105px; */
+  /* flex-direction: column; */
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
