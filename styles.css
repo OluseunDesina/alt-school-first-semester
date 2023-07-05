@@ -316,6 +316,7 @@ stat-description {
 
 .pricing-feature {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .pricing-feature > li::before {
@@ -338,10 +339,10 @@ stat-description {
       linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
     ),
     url(./assets/images/Group-2.svg), url(./assets/images/Group-3.svg);
-  background-blend-mode: difference;
   background-size: contain, contain, contain;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom right, bottom right, bottom left;
+  background-blend-mode: difference;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,48 +385,118 @@ input[placeholder] {
 }
 
 .faq-container {
-    background-image: url(./assets/images/faq-group-3.svg), url(./assets/images/faq-group-2.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
-    background-size: contain, 30%;
-    padding: 50px;
-    padding-bottom: 150px;
-    background-blend-mode: difference;
+  background-image: url(./assets/images/faq-group-3.svg),
+    url(./assets/images/faq-group-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: contain, 30%;
+  padding: 50px;
+  padding-bottom: 150px;
+  background-blend-mode: difference;
 }
 
 .faq {
-    margin: 0 auto;
-    max-width: 900px;
-
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .accordion {
-    margin-top: 64px;
+  margin-top: 64px;
 }
 
 .accordion-button::after {
-    background-image: url(./assets/images/plus.svg) !important;
+  background-image: url(./assets/images/plus.svg) !important;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(./assets/images/minus.svg) !important;
+  background-image: url(./assets/images/minus.svg) !important;
 }
 
 .accordion-button:not(.collapsed) {
-    color: var(--text-color-main-text);
-    background-color: var(--neutral-white);
+  color: var(--text-color-main-text);
+  background-color: var(--neutral-white);
 }
 
 .get-started {
-    background: linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%);
-    background-image: url(./assets/images/get-started-1.svg), url(./assets/images/get-started-2.svg), linear-gradient(180deg, #1E3448 99.99%, rgba(30, 52, 72, 0.00) 100%);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top left, bottom right;
-    background-blend-mode: difference;
-    padding: 150px ;
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  background-image: url(./assets/images/get-started-1.svg),
+    url(./assets/images/get-started-2.svg),
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-blend-mode: difference;
+  padding: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer {
+  background-image: url(./assets/images/footer-1.svg),
+    url(./assets/images/footer-2.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-blend-mode: overlay;
+  background-position: bottom left, bottom right;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 90px 200px;
+}
+
+.logo-black {
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-heading {
+  color: var(--neutral-900, #071827);
+
+  /* H4/Bold */
+  font-size: 16px;
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  color: var(--neutral-800, #112232);
+  font-size: 16px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-navs {
+    padding: 40px auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
+    justify-content: flex-end;
+}
+
+.footer-nav::after {
+    margin: 5px;
+    content: "|";
+}
+
+.footer-nav:last-child::after {
+    margin: 5px;
+    content: "";
 }
