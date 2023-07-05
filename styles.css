@@ -82,6 +82,19 @@ p {
   line-height: 12px;
 }
 
+.button-outline {
+  font-size: 16px;
+  font-family: Gilroy-SemiBold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 12px 24px;
+  border-radius: 100px;
+  border: 1px solid var(--primary-300-base, #0065fe);
+  background-color: var(--neutral-white);
+  color: var(--primary-300-base);
+}
+
 .banner {
   justify-content: center;
   width: 781px;
@@ -222,10 +235,98 @@ stat-description {
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.pricing {
+    margin: 100px auto;
 }
 
 .price-heading {
-    max-width: 550px;
-    margin: 0 auto;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.pricing-cards {
+  display: flex;
+  padding: 42px 176px 112px 176px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pro-card {
+  border-radius: 12px;
+  background: var(
+    --linear-gradient,
+    linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%)
+  );
+  color: var(--neutral-white, #fff);
+  font-size: 24px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 90px 50px;
+  z-index: 2;
+  width: 410px;
+
+  /* Drop shadow */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.basic-card,
+.teams-card {
+  width: 380px;
+  border-radius: 12px;
+  border: 0.4px solid var(--primary-400, #005ae2);
+  background: var(--neutral-white, #fff);
+  padding: 20px 50px;
+
+  /* Drop shadow */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.basic-card {
+  margin-right: -10px;
+}
+
+.teams-card {
+  margin-left: -10px;
+}
+
+.price-header {
+  font-size: 24px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.price-value {
+  margin-top: 30px;
+  /* H0/Bold */
+  font-size: 40px;
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+}
+
+.pricing-feature {
+  list-style-type: none;
+}
+
+.pricing-feature > li::before {
+  content: url(./assets/images/check-circle.svg);
+  margin-right: 10px;
+}
+
+.pricing-feature > li {
+  /* color: var(--text-color-main-text, #141414); */
+  font-size: 14px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
