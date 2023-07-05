@@ -98,7 +98,7 @@ p {
 
 .banner {
   justify-content: center;
-  width: 781px;
+  max-width: 781px;
   margin: 100px auto;
   text-align: center;
 }
@@ -163,7 +163,7 @@ p {
 }
 
 .link-text {
-  width: 600px;
+  max-width: 600px;
 }
 
 .pre-stat {
@@ -269,7 +269,7 @@ stat-description {
   line-height: 32px;
   padding: 90px 50px;
   z-index: 2;
-  width: 410px;
+  max-width: 410px;
 
   /* Drop shadow */
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
@@ -277,7 +277,7 @@ stat-description {
 
 .basic-card,
 .teams-card {
-  width: 380px;
+  max-width: 380px;
   border-radius: 12px;
   border: 0.4px solid var(--primary-400, #005ae2);
   background: var(--neutral-white, #fff);
